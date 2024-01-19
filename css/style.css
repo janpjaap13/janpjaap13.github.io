@@ -1,0 +1,286 @@
+html, body{
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-indent: 1.5em;
+  word-spacing: 0.2em;
+}
+
+a:visited {
+  color: purple;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a:hover {
+  color: #FF4500; /* Set your desired color for the hover effect */
+  text-decoration: underline; /* Optionally, you can add an underline or other styles */
+}
+
+h1, h2, h3 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.h-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.desktop-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.desktop-nav ul, .mobile-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.desktop-nav li, .mobile-nav li {
+  margin: 0 15px;
+}
+
+.desktop-nav a, .mobile-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.page-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 5rem;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.article-text{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.article-img img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding: 1rem;
+  border-color: #333;
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: 5%;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.article-header {
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.multi-img-figure{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Css for PC */
+@media screen and (min-width: 768px) {
+  .page-footer span{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article-img{
+    width: 45%;
+    max-width: 45%;
+    margin: 0;
+    padding-right: 5%;
+    
+  }
+
+  .article-text{
+    width: 48%;
+    max-width: 48%;
+  }
+
+  .article-wide-text{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    display: flex-colomn;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .multi-img-figure{
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .multi-img-figure img {
+    width: 32%;
+    max-width: 32%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+/* css for mobile */
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+}
+
+.mobile-nav {
+    display: block;
+}
+
+.mobile-nav ul {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    display: none;
+    padding: 1rem;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+.page-footer span{
+  width: 100%;
+}
+
+.article-img{
+  width: 100%;
+  max-width: 100%;
+}
+}
+
+/* roep de class aan en geef het de volgende values */
+.CookieStatement {
+  position: fixed;
+  color: blue;
+  border: 3px solid #fa0;
+  opacity: 50%;
+  bottom: 0;
+  right: 30px;
+  width: auto;
+  overflow-x: hidden;
+  z-index: 9999;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'YourFont', sans-serif;
+}
+

@@ -1,0 +1,12 @@
+Student name: Jan Jaap van Laar
+Student number: 691510
+Student class: 3INF
+Github Repository:
+Github pages URL:
+
+
+em
+ strong tag.
+y text-transform in uppercase.
+ Uses pseudo-class mouse over link.
+✓ Uses pseudo-class selected link.
